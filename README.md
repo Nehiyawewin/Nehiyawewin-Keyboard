@@ -5,3 +5,7 @@ A Linux Keyboard layout for Plains Cree/ Nêhiyawêwin
 # Installation:
 
 To Install the keyboard, add it ~/.config/xkb/symbols
+
+# Windows Support:
+
+I will not be supporting windows or macos with this project. My older archived keyboard repository should suit your needs however.
