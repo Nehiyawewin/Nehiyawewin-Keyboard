@@ -1,0 +1,97 @@
+// Nehiyawewin Syllabic Keyboard
+
+// File          : nehiyawin.xkb_symbols
+// Project page  : https://github.com/Nehiyawewin/Nehiyawewin-Keyboard
+// Version       : 0.0.1
+// License       : MIT
+// This file should be copied to ~/.config/xkb/symbols
+
+// Legend:
+// ┌─────┐
+// │Shift│
+// │Base │
+// └─────┘
+
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────────┐
+// │     │ ᐋ   │ ᐹ   │ ᑖ   │ ᑳ   │ ᒑ   │ ᒫ   │ ᓈ   │ ᓵ   │ ᔮ   │     │     │     │          │
+// │     │ ᐊ   │ ᐸ   │ ᑕ   │ ᑲ   │ ᒐ   │ ᒪ   │ ᓇ   │ ᓴ   │ ᔭ   │     │     │     │ Back     │
+// ├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬───────┤
+// │        │ ᐦ   │ ᑊ   │ ᐟ   │ ᐠ   │ ᐨ   │ ᒼ   │ ᐣ   │ ᐢ   │ ᕀ   │  ᐤ  │     │     │       │
+// │ Tab    │ ᐁ   │ ᐯ   │ ᑌ   │ ᑫ   │ ᒉ   │ ᒣ   │ ᓀ   │ ᓭ   │ ᔦ   │  ᐧ  │     │     │       │
+// ├────────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴───────┤
+// │         │ ᐄ   │ ᐲ   │ ᑏ   │ ᑮ   │ ᒌ   │ ᒦ   │ ᓃ   │ ᓰ   │ ᔩ   │  :  │ "   │            │
+// │ Caps    │ ᐃ   │ ᐱ   │ ᑎ   │ ᑭ   │ ᒋ   │ ᒥ   │ ᓂ   │ ᓯ   │ ᔨ   │  ;  │ '   │ Return     │
+// ├─────────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴────────────┤
+// │            │ ᐆ   │ ᐴ   │ ᑑ   │ ᑰ   │ ᒎ   │ ᒨ   │ ᓅ   │ ᓲ   │ ᔫ   │?    │               │
+// │ Shift      │ ᐅ   │ ᐳ   │ ᑐ   │ ᑯ   │ ᒍ   │ ᒧ   │ ᓄ   │ ᓱ   │ ᔪ   │᙮    │ Shift         │
+// ├───────┬────┴──┬──┴────┬┴─────┴─────┴─────┴─────┴─────┴─┬───┴───┬─┴─────┼───────┬───────┤
+// │       │       │       │                                │       │       │       │       │
+// │ Ctrl  │ Super │ Alt   │ Space                          │ AltGr │ Super │ Menu  │ Ctrl  │
+// └───────┴───────┴───────┴────────────────────────────────┴───────┴───────┴───────┴───────┘
+
+partial alphanumeric_keys modifier_keys
+xkb_symbols "nehiyawewin" {
+    name[group1] = "Nehiyawewin";
+    key.type[group1] = "TWO_LEVEL";
+
+    // Number Row
+    key <TLDE> {[]}; // ~
+    key <AE01> {[ U140A, U140B ]}; // 1 ᐊ ᐋ
+    key <AE02> {[ U1438, U1439 ]}; // 2 ᐸ ᐹ
+    key <AE03> {[ U1455, U1456 ]}; // 3 ᑕ ᑖ
+    key <AE04> {[ U1472, U1473 ]}; // 4 ᑲ ᑳ
+    key <AE05> {[ U1490, U1491 ]}; // 5 ᒐ ᒑ
+    key <AE06> {[ U14AA, U14AB ]}; // 6 ᒪ ᒫ
+    key <AE07> {[ U14C7, U14C8 ]}; // 7 ᓇ ᓈ
+    key <AE08> {[ U14F4, U14F5 ]}; // 8 ᓴ ᓵ
+    key <AE09> {[ U152D, U152E ]}; // 9 ᔭ ᔮ
+    key <AE10> {[]}; // 0
+    key <AE11> {[]}; // -
+    key <AE12> {[]}; // =
+
+    // First Row
+    key <AD01> {[ U1401, U1426 ]}; // q ᐁ ᐦ
+    key <AD02> {[ U142F, U144A ]}; // w ᐯ ᑊ
+    key <AD03> {[ U144C, U141F]}; // e ᑌ ᐟ
+    key <AD04> {[ U146B, U1420 ]}; // r ᑫ ᐠ
+    key <AD05> {[ U1489, U1428 ]}; // t ᒉ ᐨ
+    key <AD06> {[ U14A3, U14BC ]}; // y ᒣ ᒼ
+    key <AD07> {[ U14C0, U1423 ]}; // u ᓀ ᐣ
+    key <AD08> {[ U14ED, U1422 ]}; // i ᓭ ᐢ
+    key <AD09> {[ U1526, U1540 ]}; // o ᔦ ᕀ
+    key <AD10> {[ U1427, U1424]}; // p ᐧ ᐤ
+    key <AD11> {[ VoidSymbol, VoidSymbol ]}; // [
+    key <AD12> {[ VoidSymbol, VoidSymbol ]}; // ]
+    key <BKSL> {[ VoidSymbol, VoidSymbol ]}; // backslash
+    key <LSGT> {[ VoidSymbol, VoidSymbol ]}; // also backslash
+
+    // Second Row
+    key <AC01> {[ U1403, U1404 ]}; // a ᐃ ᐄ
+    key <AC02> {[ U1431, U1432 ]}; // s ᐱ ᐲ
+    key <AC03> {[ U144E, U144F ]}; // d ᑎ ᑏ
+    key <AC04> {[ U146D, U146E ]}; // f ᑭ ᑮ
+    key <AC05> {[ U148B, U148C ]}; // g ᒋ ᒌ
+    key <AC06> {[ U14A5, U15A6 ]}; // h ᒥ ᒦ
+    key <AC07> {[ U14C2, U14C3 ]}; // j ᓂ ᓃ
+    key <AC08> {[ U14EF, U14F0 ]}; // k ᓯ ᓰ
+    key <AC09> {[ U1528, U1529]}; // l ᔨ ᔩ
+    key <AC10> {[ semicolon, colon ]}; // ;
+    key <AC11> {[ apostrophe, quotedbl ]}; // '
+    key <AC12> {[ VoidSymbol, VoidSymbol ]}; // backslash??
+
+    // Third Row
+    key <AB01> {[ U1405, U1406 ]}; // z ᐅ ᐆ
+    key <AB02> {[ U1433, U1434 ]}; // x ᐳ ᐴ
+    key <AB03> {[ U1450, U1451 ]}; // c ᑐ ᑑ
+    key <AB04> {[ U146F, U1470 ]}; // v ᑯ ᑰ
+    key <AB05> {[ U148D, U148E ]}; // b ᒍ ᒎ
+    key <AB06> {[ U14A7, U14A8 ]}; // n ᒧ ᒨ
+    key <AB07> {[ U14C4, U14C5 ]}; // m ᓄ ᓅ
+    key <AB08> {[ U14F1, U14F2 ]}; // , ᓱ ᓲ
+    key <AB09> {[ U152A, U152B ]}; // . ᔪ ᔫ
+    key <AB10> {[ U166E, quesiton]}; // / ᙮ ? 
+
+    // Spacebar
+    key <SPCE> {[ space, space ]};
+
+}; 
