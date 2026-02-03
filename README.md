@@ -3,6 +3,7 @@ A Linux Keyboard layout for Plains Cree/ Nêhiyawêwin
 
 # Example
 
+```
 Legend:
 ┌─────┐
 │Shift│
@@ -24,7 +25,7 @@ Legend:
 │       │       │       │                                │       │       │       │       │
 │ Ctrl  │ Super │ Alt   │ Space                          │ AltGr │ Super │ Menu  │ Ctrl  │
 └───────┴───────┴───────┴────────────────────────────────┴───────┴───────┴───────┴───────┘
-
+```
 # Installation:
 
 To Install the keyboard, add it ~/.config/xkb/symbols
