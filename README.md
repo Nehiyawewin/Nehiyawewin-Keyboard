@@ -3,7 +3,7 @@ A Linux Keyboard layout for Plains Cree/ Nêhiyawêwin
 
 # Example
 
-
+![alt text](https://github.com/Nehiyawewin/Nehiyawewin-Keyboard/blob/main/Example.png?raw=true)
 
 # Installation:
 
