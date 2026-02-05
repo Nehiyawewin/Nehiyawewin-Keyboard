@@ -10,6 +10,7 @@ A Linux Keyboard layout for Plains Cree/ Nêhiyawêwin
 ### Locally (for one user)
 
 ```git clone https://github.com/Nehiyawewin/Nehiyawewin-Keyboard/ && cd Nehiyawewin-Keyboard```
+
 ```mkdir -p ~/.config/xkb/symbols && cp nehiyawewin.xkb_symbols ~/.config/xkb/symbols/custom```
 
 ### Globally (for all users)
@@ -25,7 +26,6 @@ If you use a typical desktop like kde, xfce, or gnome you should be able to go i
 If you use a compositor / tiling window manager you will have to specify the layout in your input config, it should look something like this:
 
 ```
-
 # Hyprland input config example
 
 input {
